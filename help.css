@@ -1,0 +1,255 @@
+  
+      :root {
+        --buff: #cb997e;
+        --champagne-pink: #eddcd2;
+        --linen: #fff1e6;
+        --isabelline: #f0efeb;
+        --desert-sand: #ddbea9;
+        --sage: #a5a58d;
+        --ash-gray: #b7b7a4;
+      }
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: var(--isabelline);
+        color: #333;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .navbar {
+        background-color: var(--buff);
+      }
+
+      .navbar-brand,
+      .nav-link {
+        color: white !important;
+      }
+
+      .skill-item, .project-card, .education-item, .experience-item, .award-item {
+        transition: all 0.3s ease;
+      }
+
+      .skill-item:hover
+      {
+        border-left: 4px solid var(--buff);
+      }
+      .award-item:hover
+      {
+        border-left: 4px solid var(--buff);
+      }
+
+      .hero {
+        background-color: var(--champagne-pink);
+        padding: 100px 0;
+        text-align: center;
+      }
+
+      .section-title {
+        color: var(--buff);
+        border-bottom: 2px solid var(--buff);
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+      }
+
+      .about,
+      .skills,
+      .projects,
+      .education,
+      .experience,
+      .languages,
+      .hobbies,
+      .awards,
+      .contact {
+        padding: 80px 0;
+      }
+
+      .about {
+        background-color: var(--linen);
+      }
+
+      .skills {
+        background-color: var(--isabelline);
+      }
+
+      .projects {
+        background-color: var(--linen);
+      }
+
+      .education {
+        background-color: var(--isabelline);
+      }
+
+      .experience {
+        background-color: var(--linen);
+      }
+
+      .languages {
+        background-color: var(--isabelline);
+      }
+
+      .hobbies {
+        background-color: var(--linen);
+      }
+
+      .awards {
+        background-color: var(--isabelline);
+      }
+
+      .contact {
+        background-color: var(--linen);
+      }
+
+      .footer {
+        background-color: var(--buff);
+        color: white;
+        padding: 30px 0;
+        text-align: center;
+      }
+
+      .skill-item,
+      .project-card,
+      .education-item,
+      .experience-item,
+      .award-item {
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+
+      .skill-item:hover,
+      .project-card:hover,
+      .education-item:hover,
+      .experience-item:hover,
+      .award-item:hover {
+        transform: translateY(-5px);
+      }
+
+      .project-card {
+        height: 100%;
+      }
+
+      .social-icons a {
+        color: white;
+        font-size: 24px;
+        margin: 0 10px;
+      }
+
+      .contact-info i {
+        color: var(--buff);
+        margin-right: 10px;
+      }
+
+      /* Mobile Responsive Styles */
+      @media (max-width: 768px) {
+        .hero {
+          padding: 60px 0;
+        }
+        
+        .hero h1 {
+          font-size: 2rem;
+        }
+        
+        .hero .lead {
+          font-size: 1rem;
+        }
+        
+        .section-title {
+          font-size: 1.75rem;
+        }
+        
+        .about, .skills, .projects, .education, .experience, .languages, .hobbies, .awards, .contact {
+          padding: 40px 0;
+        }
+        
+        .contact-info, form {
+          margin-bottom: 30px;
+        }
+        
+        .navbar-brand {
+          font-size: 1.25rem;
+        }
+        
+        /* Fix navbar toggle button color */
+        .navbar-toggler {
+          border-color: rgba(255,255,255,0.5);
+        }
+        
+        .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+        
+        /* Make download button more mobile-friendly */
+        .hero .btn-lg {
+          padding: 8px 16px;
+          font-size: 0.9rem;
+        }
+        
+        /* Adjust back to top button size and position */
+        #backToTop {
+          width: 40px;
+          height: 40px;
+          bottom: 15px;
+          right: 15px;
+        }
+        
+        /* Make form inputs larger for touch */
+        .form-control {
+          padding: 12px;
+          font-size: 16px; /* Prevents iOS zoom on focus */
+        }
+      }
+      
+      /* Extra small devices */
+      @media (max-width: 576px) {
+        .skill-item, .project-card, .education-item, .experience-item, .award-item {
+          padding: 15px;
+        }
+        
+        .hero h1 {
+          font-size: 1.75rem;
+        }
+        
+        .social-icons a {
+          font-size: 20px;
+          margin: 0 8px;
+        }
+        
+        .footer {
+          padding: 20px 0;
+        }
+      }
+      
+      /* Fix nav menu on mobile */
+      @media (max-width: 991px) {
+        .navbar-collapse {
+          background-color: var(--buff);
+          padding: 10px;
+          border-radius: 0 0 8px 8px;
+          margin-top: 10px;
+        }
+        
+        .nav-link {
+          padding: 10px 15px !important;
+          border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .nav-item:last-child .nav-link {
+          border-bottom: none;
+        }
+      }
+    

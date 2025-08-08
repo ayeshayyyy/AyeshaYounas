@@ -3,6 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO Meta Tags -->
+
+    <meta name="description" content="Ayesha Younas - Computer Science student specializing in AI & ML. View my portfolio showcasing projects in C++, Assembly, and web development.">
+
+    <meta name="keywords" content="Ayesha Younas, computer science, portfolio, software developer, C++, programming">
+
+    <meta name="author" content="Ayesha Younas">
+
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+
+    <meta property="og:title" content="Ayesha Younas - Portfolio">
+
+    <meta property="og:description" content="Computer Science enthusiast with expertise in web development, programming, and problem-solving.">
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:url" content="https://ayeshayyyy.github.io/AyeshaYounas/">
+
+    <meta property="og:image" content="./files/favicon.ico">
+
+    <!-- Twitter Card Meta Tags -->
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="Ayesha Younas - Portfolio">
+
+    <meta name="twitter:description" content="Computer Science enthusiast with expertise in web development, programming, and problem-solving.">
+
+    <meta name="twitter:image" content="./files/favicon.ico">
+    
     <title>Ayesha Younas - Portfolio</title>
     <!-- Bootstrap CSS -->
     <link
@@ -457,12 +489,15 @@
             </div>
           </div>
           <div class="col-md-6">
-            <form>
+            <form 
+              action="https://formspree.io/f/mrblowka"
+              method="POST" >
               <div class="mb-3">
                 <input
                   type="text"
                   class="form-control"
                   placeholder="Your Name"
+                  name = "name"
                 />
               </div>
               <div class="mb-3">
@@ -470,6 +505,15 @@
                   type="email"
                   class="form-control"
                   placeholder="Your Email"
+                  name = "email"
+                />
+              </div>
+               <div class="mb-3">
+                <input
+                  type="subject"
+                  class="form-control"
+                  placeholder="Your Subject"
+                  name = "subject"
                 />
               </div>
               <div class="mb-3">
@@ -477,6 +521,7 @@
                   class="form-control"
                   rows="5"
                   placeholder="Your Message"
+                  name = "message"
                 ></textarea>
               </div>
               <button
@@ -541,16 +586,7 @@
         }
         
         window.addEventListener("scroll", onScroll);
-        
-        // Form submission (placeholder)
-        const contactForm = document.querySelector('form');
-        if (contactForm) {
-          contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! This is a demo form - in a real implementation, this would send an email.');
-            this.reset();
-          });
-        }
+  
       });
 
       // Back to top functionality
